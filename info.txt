@@ -1,0 +1,4 @@
+this is a site for github and would be my personal website for now
+edit date:13-01-2023{
+    going to change the header and gonna do some repaint on the website still will not be using css for now
+}

@@ -1,0 +1,159 @@
+/* this is the css for new toggle menu nothing to do with old one */
+.nav-small{
+  display: none;
+}
+.icon div{
+  width:25px;
+  height: 3px;
+  background-color: #333333;
+}
+.icon{
+  width:40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button{
+  border: 1px solid #fffffc;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.hidden{
+  display: none;
+}
+#menu{
+  border: 1px solid #333333;
+  position: fixed;
+  border-radius: 20px;
+  right: 0px;
+  width: 150px;
+  overflow: hidden;
+}
+.items{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-content: space-around;
+  align-items: center;
+}
+.items>div>a{ 
+  text-decoration: none;
+  color:#000000;
+  font-size: 1.2em;    
+}
+.items>div{
+  border: 1px solid #333333;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: #fc8eac30;
+}
+.items>div:hover,.items>div:active{
+  background-color: #f4f4f4;
+}
+/* this is the css for new toggle menu nothing to do with old one */
+*{
+  padding: 0;
+  margin:0;
+}
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navtop{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFA3FD;
+  background-image:linear-gradient(to bottom,#ffffff,#FFA3FD ,#FFA3FD,#FFA3FD ,#ffffff);
+}
+.navmenu{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type:none;
+  width: 80%;
+}
+/* links decoration here*/
+.navmenu li a{
+  text-decoration: none;
+  color:black;
+}
+.navmenu li{
+  margin-left: 3%;
+  margin-right: 5px;
+  font-size: 150%;
+  padding: 5px;
+  cursor: pointer;
+}
+.navmenu li:hover{
+  background-color: #ffffff;
+}
+main{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+
+  background-image:linear-gradient(to bottom,#FFA3FD 60%,#fff);
+  height: 100vh;
+
+}
+.content{
+  width:30%;
+  align-items: center;
+}
+.potray{
+  width:30%;
+  align-items: top;
+}
+.vertical{
+  width: 20%;
+}
+.vertical p{
+  font-size: 99px;
+  writing-mode:vertical-rl;
+  transform: rotateX(180deg);
+  transform: rotatez(180deg);
+  margin-left: -20%;
+  color:#e27d60;
+}
+.potray img{
+  border-radius: 20%;
+  max-width: 90%;
+}
+@media (max-width: 620px) {
+.navmenu li{
+  margin-left: 0;
+  margin-right: 10px;
+}
+.navmenu{
+  display: none;
+}
+.nav-small{
+  display: block;
+}
+}
+@media (max-width: 400px) {
+  .vertical{
+      display: none;
+  }
+  main{
+      flex-direction: column-reverse;
+  }
+  .content,.potray{
+      width: 80%;
+  }
+  .portray img{
+    width:60%;
+  
+  }
+
+}
+
