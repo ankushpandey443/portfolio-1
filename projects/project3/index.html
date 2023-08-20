@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        
+            <section class="heading">
+                <h1>The guessing game</h1>
+                <p>Guess a number B/W 1 to 20</p>
+            </section>
+            <section class="gamedisplay">
+                <div class="display">
+                    <p>?</p>
+                </div>
+            </section>
+            <section class="controls">
+                <p>Enter Your Number</p>
+                <input type="number" min="1" max="20" id="inputnumber">
+                <button onclick="check()">Check</button>
+                <button onclick="reset()">Reset</button>
+            </section>
+       
+        <aside>
+            <h2>Score board</h2>
+            <p>your score:<b id="myscore">?</b></p>
+            <p>Best score : <b id="highscore">?</b></p>            
+        </aside>
+</body>
+</html>
